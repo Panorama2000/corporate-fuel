@@ -1,0 +1,21 @@
+{
+  "name": "Corporate Fuel Token List",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "currency": "CFT",
+      "issuer": "raMDb32m6b3BHJnBzZ6R5bMRDV5URsuCwx",
+      "name": "Corporate Fuel Token",
+      "description": "Corporate Fuel Token (CFT) – Funding a global business empire in hotels, real estate, and charters.",
+      "website": "https://panorama2000.github.io/corporate-fuel/",
+      "logo": {
+        "png": "https://raw.githubusercontent.com/panorama2000/corporate-fuel/main/r99.png"
+      },
+      "trustLevel": 1
+    }
+  ]
+}
