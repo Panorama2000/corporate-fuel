@@ -1,19 +1,13 @@
+
+
+
 {
-  "name": "Corporate Fuel Token List",
-  "version": {
-    "major": 1,
-    "minor": 0,
-    "patch": 0
-  },
-  "tokens": [
-    {
-      "currency": "CFT",
-      "issuer": "raMDb32m6b3BHJnBzZ6R5bMRDV5URsuCwx",
-      "name": "Corporate Fuel Token",
-      "description": "Corporate Fuel (CFT) is a digital currency, developed specifically for the funding of our corporate setup and registration",
-      "website": "https://panorama2000.github.io/corporate-fuel/",
-      "logo": {"png": "https://raw.githubusercontent.com/panorama2000/corporate-fuel/main/r99.png"},
-      "trustLevel": 1
-    }
-  ]
+  "name": "Corporate Fuel Token",
+  "symbol": "CFT",
+  "decimals": 6,
+  "issuer": "raMDb32m6b3BHJnBzZ6R5bMRDV5URsuCwx",
+  "icon": "https://raw.githubusercontent.com/panorama2000/corporate-fuel/main/r99.png",
+  "website": "https://panorama2000.github.io/corporate-fuel/",
+  "description": "Corporate Fuel (CFT) is a digital currency, developed specifically for the funding of our corporate setup and registration",
+  }
 }
