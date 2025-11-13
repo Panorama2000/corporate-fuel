@@ -1,49 +1,14 @@
-Publish an xrp-ledger.toml File
-You will need:
-
-A web domain and a server or webspace with FTP access.
-Signing access to your token's issuing account.
-Step 1: Craft the xrp-ledger.toml file
-The file should follow the XLS-26 Standard. Below is an example.
-
 [[ISSUERS]]
-address = "rCSCManTZ8ME9EoLrSHHYKW8PPwWMgkwr"
-name = "CasinoCoin"
+address = "raMDb32m6b3BHJnBzZ6R5bMRDV5URsuCwx"
+name = "Corporate Fuel"
 
 [[TOKENS]]
-issuer = "rCSCManTZ8ME9EoLrSHHYKW8PPwWMgkwr"
-currency = "CSC"
-name = "CasinoCoin"
-desc = "CasinoCoin (CSC) is a digital currency, developed specifically for the regulated gaming industry."
-icon = "https://xumm.app/assets/icons/currencies/ex-csc-3.png"
+issuer = "raMDb32m6b3BHJnBzZ6R5bMRDV5URsuCwx"
+currency = "CFT"
+name = "Corporate Fuel Token"
+desc = "Corporate Fuel (CFT) is a digital currency, developed specifically for the funding of our corporate setup and registration."
+icon = "https://raw.githubusercontent.com/panorama2000/corporate-fuel/main/r99.png"
 
 [[TOKENS.URLS]]
-url = "https://casinocoin.im"
+url = "https://panorama2000.github.io/corporate-fuel/"
 type = "website"
-
-[[TOKENS.URLS]]
-url = "https://x.com/CasinoCoin"
-type = "social"
-Step 2: Upload the xrp-ledger.toml file
-Place the file on your webserver so that it is available at the following URL:
-
-https://{DOMAIN}/.well-known/xrp-ledger.toml
-The {DOMAIN} is your domain name, including any subdomains. For example, you could serve the file from either of the following URLs:
-
-https://example.com/.well-known/xrp-ledger.toml
-https://xrp.services.example.com/.well-known/xrp-ledger.toml
-Step 3: Set the Domain field on the issuing account
-To link your domain and the .toml file to your token's issuing account, its Domain field has to point to your domain. This can be done using the AccountSet transaction on the ledger. Below is a snippet how this transaction should look like.
-
-{
-    "TransactionType": "AccountSet",
-    "Account" : "ISSUING_ADDRESS_HERE",
-    "Domain": "HEX_ENCODED_DOMAIN_HERE"
-}
-For your convenience, you can use one of the following apps to set the domain field:
-
-xrpl.services
-xrptoolkit.com
-
-What happens then
-Once your domain field is set, the XRPL Meta Servers will scrape your xrp-ledger.toml file within the next 10 minutes and update your token's data.
