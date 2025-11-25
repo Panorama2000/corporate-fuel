@@ -1,3 +1,6 @@
+# Allow token clients to load icon directly
+Access-Control-Allow-Origin = "*"
+
 # xrp-ledger.toml for CFT
 
 [[ISSUERS]]
