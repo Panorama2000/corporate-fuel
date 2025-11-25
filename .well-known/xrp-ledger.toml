@@ -1,14 +1,13 @@
+# xrp-ledger.toml for CFT
+
 [[ISSUERS]]
 address = "raMDb32m6b3BHJnBzZ6R5bMRDV5URsuCwx"
 name = "Corporate Fuel"
+website = "https://panorama2000.github.io/corporate-fuel/"
+email = "panorama.2018@proton.me"
 
-[[TOKENS]]
-issuer = "raMDb32m6b3BHJnBzZ6R5bMRDV5URsuCwx"
-currency = "CFT"
-name = "Corporate Fuel Token"
-desc = "Corporate Fuel (CFT) is a digital currency, developed specifically for the funding of our corporate setup and registration."
+[[ISSUERS.TOKENS]]
+code = "CFT"
+name = "CFT"
+description =  "Corporate Fuel (CFT) is a digital currency, developed specifically for the funding of our corporate setup and registration."
 icon = "https://raw.githubusercontent.com/panorama2000/corporate-fuel/main/r99.png"
-
-[[TOKENS.URLS]]
-url = "https://panorama2000.github.io/corporate-fuel/"
-type = "website"
